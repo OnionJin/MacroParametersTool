@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleControls", "StyleControls\StyleControls.csproj", "{2ADA563B-BB7F-487D-9D12-4AEE324967FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroParametersTool", "MacroParametersTool\MacroParametersTool.csproj", "{C7F70FF8-3F4D-4ED2-96C1-D842B3DA3B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ADA563B-BB7F-487D-9D12-4AEE324967FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADA563B-BB7F-487D-9D12-4AEE324967FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADA563B-BB7F-487D-9D12-4AEE324967FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADA563B-BB7F-487D-9D12-4AEE324967FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F70FF8-3F4D-4ED2-96C1-D842B3DA3B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F70FF8-3F4D-4ED2-96C1-D842B3DA3B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F70FF8-3F4D-4ED2-96C1-D842B3DA3B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F70FF8-3F4D-4ED2-96C1-D842B3DA3B59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7DF3613-BD97-4D1B-9D82-D91FE2055BFF}
+	EndGlobalSection
+EndGlobal

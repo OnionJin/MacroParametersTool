@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ADA563B-BB7F-487D-9D12-4AEE324967FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartHome.StyleControls</RootNamespace>
+    <AssemblyName>StyleControls</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogBase.designer.cs">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\IntergerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\IntergerDialog.designer.cs">
+      <DependentUpon>IntergerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MessageBoxBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MessageBoxBase.designer.cs">
+      <DependentUpon>MessageBoxBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\DropDownList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DropDownList.designer.cs">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListItem.cs" />
+    <Compile Include="Forms\ListItems.cs" />
+    <Compile Include="Forms\NumericBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NumericBox.designer.cs">
+      <DependentUpon>NumericBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TextBox.designer.cs">
+      <DependentUpon>TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToggleButtonStyle.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Media\SoundPlayer.cs" />
+    <Compile Include="Others\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\ButtonItemControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\GridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\GridView.designer.cs">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\ItemControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\ItemControlLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Others\Word.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Style\DefaultStyle.cs" />
+    <Compile Include="Style\IStyle.cs" />
+    <Compile Include="Style\StyleMode.cs" />
+    <Compile Include="Style\StyleModeData.cs" />
+    <Compile Include="ToolStrip\MenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\MenuStripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\Navigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStripRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\DialogBase.resx">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\IntergerDialog.resx">
+      <DependentUpon>IntergerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MessageBoxBase.resx">
+      <DependentUpon>MessageBoxBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DropDownList.resx">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NumericBox.resx">
+      <DependentUpon>NumericBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextBox.resx">
+      <DependentUpon>TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\GridView.resx">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropDownList_Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropDownList_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GridView_Ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GridView_Descending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IntergerDialog_Backspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigator_First.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigator_Last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigator_Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navigator_Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumericBox._Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumericBox._Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchBar_Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchBar_Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_CheckBox_Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_CheckBox_Unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_RadioButton_Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_RadioButton_Unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_Switch_Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleButton_Switch_Unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Click.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
